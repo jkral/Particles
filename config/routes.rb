@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-root to: 'articles#index'
+  root to: 'articles#index'
   devise_for :users
-resources :articles
+  resources :articles
+  resources :articles do
+    resources :comments
+end
 end
 
 # Prefix Verb   URI Pattern                    Controller#Action
