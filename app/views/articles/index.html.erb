@@ -1,9 +1,10 @@
 <header>Particles: Only The Best Parts of Articles</header>
 
-<div id="index_head">
-<h1>All Particles</h1>
-</div>
 
+<div id="index_container">
+<div id="index_head">
+  <h1>All Particles</h1>
+</div>
 
 <ul id="articles">
   <% @articles.each do |article| %>
@@ -15,4 +16,6 @@
 </ul>
 
 <%= link_to "Create a new particle", new_article_path, class: 'new_article' %>
+
+</div>
 
