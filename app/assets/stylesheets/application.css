@@ -2,9 +2,7 @@
 	font-size: 13px;
 	height:20px;
 	background-color: rgba(0,0,0,.2);
-	
-	
-}
+	}
 
 
 
@@ -14,21 +12,17 @@ header {
 	margin-top: 50px;
 	font-size: 55px;
 	font-weight: bold;
-
-
 }
 
 
 body {
 
 	font-family: arial;
-	#
 }
 
 #index_container {
 
-
-  width: 300px;
+    width: 300px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -37,8 +31,6 @@ body {
 
 	text-align: center;
 	color: rgba(0,0,0,.5);
-
-
 }
 
 #article_title {
