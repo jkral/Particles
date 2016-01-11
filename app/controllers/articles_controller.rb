@@ -24,7 +24,15 @@ class ArticlesController < ApplicationController
 	end
 
 	def destroy
+
 		@article = Article.find(params[:id])
+
+		id = @article['id']
+
+		@article.comments.each do |item|
+			item.destroy
+		end
+
 		@article.destroy
 
 		flash.notice = "Article '#{@article.title}' Deleted!"
